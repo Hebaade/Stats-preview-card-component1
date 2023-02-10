@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.div1{
+    width: 800px;
+    height: 300px;
+    background-color: rgb(15, 2, 32);
+    color: white;
+    display: grid;
+    border-radius: 10px;
+    margin: 150px auto;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: "pra pra pra pra pra  img img img img img img img";
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    font-family:sans-serif;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.pra{
+    grid-area: pra;
+}
+.img{
+    grid-area: img;
+}
+.insights{
+    color: blueviolet;
+}
+.get{
+    margin: 10%;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.discover{
+    opacity: 0.5;
+    margin: 10%;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.info{
+    opacity: 0.5;
+    margin-top: 10px;
+    font-size: smaller;
+}
+.num{
+    font-weight: bold;
+}
+.img{
+    margin-left: 50px;
+ 
+}
+.imge{
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    filter: drop-shadow(15px 16px 15px 35px rgb(47, 0, 255)) invert(75%);
+    height: 300px;
+    -webkit-filter: drop-shadow(15px 16px 15px 35px rgb(47, 0, 255)) invert(75%);
+}
+
+.com{
+    margin: 15px;
+}
+.pp{
+    margin-left: 40px;
+}
+.nums{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "com com temp temp que que que";
+}
+@media  (max-width: 768px) {
+   .div1{
+    display: block;
+    background-color: rgb(15, 2, 32);
+    width: 350px;
+    height: 900px;
+   }
+   .imge{
+    width: 350px;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+   }
+   .img{
+    margin-left: 0px;
+   }
+   .get{
+    margin: 15%;
+    margin-left:8%;
+    margin-right: 8%;
+    font-size: 40px;
+    margin-bottom: 5px;
+   }
+   .nums{
+    display: block;
+    font-size: larger;
+   }
+   .com{
+    margin: 30px ;
+    margin-left: 40%;
+   }
+   .info{
+    margin-left: -20px;
+   }
+   .qu{
+    margin-left: -5px;
+   }
+}
